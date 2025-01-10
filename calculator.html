@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+<h2>Calculator</h2>
+<input id="result" type="text" readonly>
+<table>
+    <tr>
+<td><button onclick="append(9)" id="button1">9</button></td>
+<td><button onclick="append(8)" id="button2">8</button></td>
+<td><button onclick="append(7)" id="button3">7</button></td>
+<td><button onclick="setoperator('+')"id="button4" >+</button></td>
+
+    </tr>
+    <tr>
+<td><button onclick="append(6)" id="button5">6</button></td>
+<td><button onclick="append(5)" id="button6" >5</button></td>
+<td><button onclick="append(4)" id="button7">4</button></td>
+<td><button onclick="setoperator('-')" id="button8">-</button></td>
+       
+    </tr>
+    <tr>
+<td><button onclick="append(3)" id="button9">3</button></td>
+<td><button onclick="append(2)" id="button10">2</button></td>
+<td><button onclick="append(1)" id="button11">1</button></td>
+<td><button onclick="setoperator('*')" id="button12">*</button></td>
+
+    </tr>
+    <tr>
+<td><button onclick="append(0)" id="button13">0</button></td>
+<td><button onclick="reset()" id="button14">c</button></td>
+<td><button onclick="showresult()" id="button15">=</button></td>
+<td><button onclick="setoperator('/')" id="button16">/</button></td>
+
+    </tr>
+</table>
+
+<script src="calculator.js"></script>
+</body>
+</html>
